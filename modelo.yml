@@ -1,0 +1,19 @@
+# Semente para gerar os números pseudoaleatórios
+seed: 42
+
+# Quantidade de clientes a serem simulados
+num_clientes: 1000
+
+# Taxa de chegada dos clientes (lambda)
+# Exemplo: 0.2 significa em média 1 cliente a cada 5 unidades de tempo
+taxa_chegada: 0.2
+
+# Definição das filas (servidores em tandem)
+filas:
+  - nome: Servidor1
+    capacidade: 1       # número de atendentes neste servidor
+    taxa_servico: 0.25  # taxa de atendimento (1 cliente a cada 4 unidades de tempo em média)
+
+  - nome: Servidor2
+    capacidade: 1
+    taxa_servico: 0.33  # taxa de atendimento (1 cliente a cada 3 unidades de tempo em média)
